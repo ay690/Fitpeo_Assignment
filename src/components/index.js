@@ -4,5 +4,14 @@ import OverviewCards from "./OverviewCards";
 import DashboardContent from "./DashboardContent";
 import ActivityCharts from "./ActivityCharts";
 import GoalsPopularMenu from "./GoalsPopularMenu";
+import RecentOrders from "./RecentOrders";
 
-export { Sidebar, Header, DashboardContent, OverviewCards, ActivityCharts, GoalsPopularMenu };
+export {
+  Sidebar,
+  Header,
+  DashboardContent,
+  OverviewCards,
+  ActivityCharts,
+  GoalsPopularMenu,
+  RecentOrders,
+};
