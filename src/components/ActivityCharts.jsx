@@ -42,7 +42,7 @@ const ActivityCharts = () => {
           </select>
         </div>
       </div>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={220}>
         <BarChart data={data[selectedWeek]}>
           <CartesianGrid strokeDasharray="1 1" />
           <XAxis dataKey="name" />
