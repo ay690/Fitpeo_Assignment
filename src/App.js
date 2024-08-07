@@ -1,4 +1,4 @@
-import { Sidebar, Header } from "./components/index";
+import { Sidebar, Header, DashboardContent } from "./components/index";
 function App() {
   return (
     <div className="flex h-screen bg-gray-900 text-gray-200">
@@ -6,6 +6,7 @@ function App() {
 
       <div className="flex-1 flex flex-col">
         <Header />
+        <DashboardContent />
       </div>
     </div>
   );
