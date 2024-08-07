@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar, FaRegStar } from "react-icons/fa"; // Using react-icons for stars
+import { FaStar, FaRegStar } from "react-icons/fa";
 
 const feedback = [
   {
@@ -41,12 +41,12 @@ const StarRating = ({ rating }) => {
 
 const CustomerFeedback = () => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg max-h-[200px] w-1/4 overflow-y-scroll">
-      <h3 className="text-xl mb-4 text-white">Customer's Feedback</h3>
+    <div className="bg-gray-800 p-4 rounded-lg max-h-[200px] w-full lg:w-1/4 overflow-y-scroll custom-scrollbar">
+      <h3 className="mb-4 text-xl text-white">Customer's Feedback</h3>
       {feedback.map((item, index) => (
-        <div key={index} className="border-t border-gray-700 py-4">
+        <div key={index} className="py-4 border-t border-gray-700">
           <div className="flex flex-col items-start gap-2">
-            <div className="flex gap-4 items-center">
+            <div className="flex items-center gap-4">
               <img
                 className="w-12 h-12 rounded-full"
                 src={item.image}

@@ -60,8 +60,8 @@ const getStatusClasses = (status) => {
 
 const RecentOrders = () => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg w-3/4 max-h-[200px] overflow-y-scroll">
-      <h3 className="text-xl mb-4">Recent Orders</h3>
+    <div className="bg-gray-800 p-4 rounded-lg w-3/4 max-h-[200px] overflow-y-scroll custom-scrollbar">
+      <h3 className="mb-4 text-xl">Recent Orders</h3>
       <table className="w-full text-left">
         <thead>
           <tr>
@@ -74,7 +74,7 @@ const RecentOrders = () => {
         <tbody>
           {orders.map((order, index) => (
             <tr key={index} className="border-t border-gray-700">
-              <td className="py-2 flex items-center gap-2 mt-2">
+              <td className="flex items-center gap-2 py-2 mt-2">
                 <img
                   src={order.image}
                   alt={`${order.customer}'s profile`}
