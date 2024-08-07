@@ -5,6 +5,7 @@ import DashboardContent from "./DashboardContent";
 import ActivityCharts from "./ActivityCharts";
 import GoalsPopularMenu from "./GoalsPopularMenu";
 import RecentOrders from "./RecentOrders";
+import CustomerFeedback from "./Feedback";
 
 export {
   Sidebar,
@@ -14,4 +15,5 @@ export {
   ActivityCharts,
   GoalsPopularMenu,
   RecentOrders,
+  CustomerFeedback,
 };

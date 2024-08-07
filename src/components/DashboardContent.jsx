@@ -4,6 +4,7 @@ import {
   ActivityCharts,
   GoalsPopularMenu,
   RecentOrders,
+  CustomerFeedback,
 } from "./index";
 
 const DashboardContent = () => {
@@ -14,8 +15,9 @@ const DashboardContent = () => {
         <ActivityCharts />
         <GoalsPopularMenu />
       </div>
-      <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-3">
+      <div className="flex gap-2" >
         <RecentOrders />
+        <CustomerFeedback />
       </div>
     </div>
   );

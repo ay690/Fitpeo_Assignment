@@ -60,7 +60,7 @@ const getStatusClasses = (status) => {
 
 const RecentOrders = () => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg flex-1 max-h-[200px] overflow-y-scroll">
+    <div className="bg-gray-800 p-4 rounded-lg w-3/4 max-h-[200px] overflow-y-scroll">
       <h3 className="text-xl mb-4">Recent Orders</h3>
       <table className="w-full text-left">
         <thead>

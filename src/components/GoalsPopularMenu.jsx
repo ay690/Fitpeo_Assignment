@@ -4,17 +4,27 @@ import { MdGpsFixed } from "react-icons/md";
 import { FaHamburger } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 
+
+const colorMap = {
+  red: "bg-red-500",
+  blue: "bg-blue-500",
+  teal: "bg-teal-500",
+
+};
+
 const MenuItem = ({ icon: Icon, color, label }) => {
+
+  const bgColorClass = colorMap[color] || "bg-gray-500"; 
   return (
     <div className="flex justify-between items-center hover:cursor-pointer">
       <div className="flex gap-2 items-center">
-        <div className={`bg-${color}-500 p-2 rounded-full`}>
+        <div className={`${bgColorClass} p-2 rounded-full`}>
           <Icon color="#fff" size={30} />
         </div>
         <h3 className="text-md lg:text-lg">{label}</h3>
       </div>
       <div className="bg-gray-500 p-3 rounded-full">
-        <PiGreaterThanBold size={15} />
+        <PiGreaterThanBold size={12} />
       </div>
     </div>
   );
