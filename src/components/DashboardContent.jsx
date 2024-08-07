@@ -5,12 +5,17 @@ import {
   GoalsPopularMenu,
   RecentOrders,
   CustomerFeedback,
+  NetProfit
 } from "./index";
 
 const DashboardContent = () => {
   return (
     <div className="p-4 flex flex-col space-y-4">
+      <div className="flex ">
+
       <OverviewCards />
+      <NetProfit />
+      </div>
       <div className="flex items-center gap-3">
         <ActivityCharts />
         <GoalsPopularMenu />

@@ -5,7 +5,7 @@ const NetProfit = () => {
   const data = [{ value: 70 }, { value: 30 }];
 
   return (
-    <div className="bg-gray-700 p-4 rounded-lg max-w-screen-lg">
+    <div className="bg-gray-700 p-4 rounded-lg w-full lg:w-1/4">
       <div className="flex justify-between items-start">
         <div className="flex flex-col items-start gap-2">
           <h3 className="text text-md">Net Profit</h3>
@@ -13,7 +13,7 @@ const NetProfit = () => {
           <h3 className="text-green-400">▲ 3%</h3>
         </div>
         <div className="relative">
-          <PieChart width={90} height={90}>
+          <PieChart width={95} height={95}>
             <Pie
               data={data}
               cx={45}

@@ -28,7 +28,7 @@ const ActivityCharts = () => {
   const [selectedWeek, setSelectedWeek] = useState("weekly");
 
   return (
-    <div className="bg-gray-800 p-4 rounded-lg w-3/4">
+    <div className="bg-gray-800 p-4 rounded-lg w-full lg:w-3/4">
       <div className="flex justify-between items-center">
         <h3 className="text-xl mb-4">Activity</h3>
         <div className="mb-4">

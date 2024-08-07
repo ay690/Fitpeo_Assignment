@@ -1,7 +1,6 @@
 import React from "react";
 import { FaChartPie } from "react-icons/fa";
 import { TbShoppingBagCheck, TbShoppingBagExclamation } from "react-icons/tb";
-import NetProfit from "./NetProfit";
 
 const cards = [
   {
@@ -36,7 +35,7 @@ const cards = [
 
 const OverviewCards = () => {
   return (
-    <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+    <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:w-3/4">
       {cards.map((card, index) => (
         <div
           key={index}
@@ -60,7 +59,6 @@ const OverviewCards = () => {
           </div>
         </div>
       ))}
-      <NetProfit />
     </div>
   );
 };
