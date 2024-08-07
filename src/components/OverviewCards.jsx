@@ -36,13 +36,13 @@ const cards = [
 
 const OverviewCards = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+    <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`p-4 rounded-lg ${card.bgColor} max-w-[200px]`}
+          className={`p-4 rounded-lg ${card.bgColor} max-w-[250px]`}
         >
-          <div className="flex flex-col  items-start space-x-1 ">
+          <div className="flex flex-col  items-start ">
             <div className="text-2xl">{card.icon}</div>
             <div>
               <div className="text-lg">{card.title}</div>
@@ -60,7 +60,6 @@ const OverviewCards = () => {
           </div>
         </div>
       ))}
-
       <NetProfit />
     </div>
   );
