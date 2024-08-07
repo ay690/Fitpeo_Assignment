@@ -1,6 +1,7 @@
 import React from "react";
 import { FaChartPie } from "react-icons/fa";
 import { TbShoppingBagCheck, TbShoppingBagExclamation } from "react-icons/tb";
+import NetProfit from "./NetProfit";
 
 const cards = [
   {
@@ -35,11 +36,11 @@ const cards = [
 
 const OverviewCards = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`p-4 rounded-lg ${card.bgColor} max-w-[300px]`}
+          className={`p-4 rounded-lg ${card.bgColor} max-w-[200px]`}
         >
           <div className="flex flex-col  items-start space-x-1 ">
             <div className="text-2xl">{card.icon}</div>
@@ -59,6 +60,8 @@ const OverviewCards = () => {
           </div>
         </div>
       ))}
+
+      <NetProfit />
     </div>
   );
 };
