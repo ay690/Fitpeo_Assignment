@@ -19,14 +19,14 @@ const Sidebar = () => {
     }`;
 
   return (
-    <div className="w-20 bg-gray-800 flex flex-col items-center py-4">
-      <div className="text-2xl text-blue-500 mb-8">
+    <div className="flex-col items-center hidden w-20 py-4 bg-gray-800 lg:flex">
+      <div className="mb-8 text-2xl text-blue-500">
         <PiWindowsLogo fill="#4169E1" />
       </div>
-      <div className="flex flex-col flex-grow justify-between items-center py-4">
+      <div className="flex flex-col items-center justify-between flex-grow py-4">
         <div className="flex flex-col items-center">
           <div
-            className="group relative w-full flex items-center mb-6"
+            className="relative flex items-center w-full mb-6 group"
             onClick={() => handleClick("home")}
           >
             <div
@@ -37,7 +37,7 @@ const Sidebar = () => {
             <FaHome className={iconClasses("home")} size={40} />
           </div>
           <div
-            className="group relative w-full flex items-center mb-6"
+            className="relative flex items-center w-full mb-6 group"
             onClick={() => handleClick("barChart")}
           >
             <div
@@ -48,7 +48,7 @@ const Sidebar = () => {
             <BiBarChartSquare className={iconClasses("barChart")} size={40} />
           </div>
           <div
-            className="group relative w-full flex items-center mb-6"
+            className="relative flex items-center w-full mb-6 group"
             onClick={() => handleClick("ipadBolt")}
           >
             <div
@@ -59,7 +59,7 @@ const Sidebar = () => {
             <TbDeviceIpadBolt className={iconClasses("ipadBolt")} size={40} />
           </div>
           <div
-            className="group relative w-full flex items-center mb-6"
+            className="relative flex items-center w-full mb-6 group"
             onClick={() => handleClick("wallet")}
           >
             <div
@@ -70,7 +70,7 @@ const Sidebar = () => {
             <CiWallet className={iconClasses("wallet")} size={40} />
           </div>
           <div
-            className="group relative w-full flex items-center mb-6"
+            className="relative flex items-center w-full mb-6 group"
             onClick={() => handleClick("handbag")}
           >
             <div
@@ -82,7 +82,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div
-          className="group relative w-full flex items-center mb-6"
+          className="relative flex items-center w-full mb-6 group"
           onClick={() => handleClick("logout")}
         >
           <div
