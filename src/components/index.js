@@ -7,6 +7,7 @@ import GoalsPopularMenu from "./GoalsPopularMenu";
 import RecentOrders from "./RecentOrders";
 import CustomerFeedback from "./Feedback";
 import NetProfit from "./NetProfit";
+import MenuItem from "./MenuItem";
 
 export {
   Sidebar,
@@ -18,4 +19,5 @@ export {
   RecentOrders,
   CustomerFeedback,
   NetProfit,
+  MenuItem,
 };
