@@ -1,10 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { orders } from "../constants/Recentorders";
 import { getStatusClasses } from "../utils/getStatusClass";
 
 const RecentOrders = () => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg w-full lg:w-3/4 max-h-[200px] overflow-y-scroll custom-scrollbar">
+    <motion.div
+      className="bg-gray-800 p-4 rounded-lg w-full lg:w-3/4 max-h-[200px] overflow-y-scroll custom-scrollbar"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ scale: 1.02 }}
+    >
       <h3 className="mb-4 text-lg md:text-xl">Recent Orders</h3>
       <table className="w-full text-sm text-left md:text-base">
         <thead>
@@ -17,7 +24,13 @@ const RecentOrders = () => {
         </thead>
         <tbody>
           {orders.map((order, index) => (
-            <tr key={index} className="border-t border-gray-700">
+            <motion.tr
+              key={index}
+              className="border-t border-gray-700"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }} // Stagger animation
+            >
               <td className="flex items-center gap-2 py-2 mt-2">
                 <img
                   src={order.image}
@@ -47,11 +60,11 @@ const RecentOrders = () => {
                   {order.status}
                 </span>
               </td>
-            </tr>
+            </motion.tr>
           ))}
         </tbody>
       </table>
-    </div>
+    </motion.div>
   );
 };
 

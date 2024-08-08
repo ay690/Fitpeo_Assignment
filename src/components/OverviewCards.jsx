@@ -1,13 +1,18 @@
 import React from "react";
 import { cards } from "../constants/OverviewCards";
+import { motion } from "framer-motion";
 
 const OverviewCards = () => {
   return (
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:w-full">
       {cards.map((card, index) => (
-        <div
+        <motion.div
           key={index}
           className={`p-4 rounded-lg ${card.bgColor} w-full sm:max-w-[200px] lg:max-w-none`}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.2 }}
+          whileHover={{ scale: 1.05 }}
         >
           <div className="flex flex-col items-start">
             <div
@@ -33,10 +38,11 @@ const OverviewCards = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
 };
 
 export default OverviewCards;
+

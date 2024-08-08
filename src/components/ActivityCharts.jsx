@@ -8,17 +8,34 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
+import { motion } from "framer-motion";
 import { data } from "../constants/ActivityCharts";
 
 const ActivityCharts = () => {
   const [selectedWeek, setSelectedWeek] = useState("weekly");
 
   return (
-    <div className="w-full p-4 bg-gray-800 rounded-lg lg:w-3/4">
+    <motion.div
+      className="w-full p-4 bg-gray-800 rounded-lg lg:w-3/4"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ scale: 1.02 }}
+    >
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-xl text-white">Activity</h3>
-        <div>
+        <motion.h3
+          className="text-xl text-white"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Activity
+        </motion.h3>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <select
             id="week-selector"
             value={selectedWeek}
@@ -27,7 +44,7 @@ const ActivityCharts = () => {
           >
             <option value="weekly">Weekly</option>
           </select>
-        </div>
+        </motion.div>
       </div>
       <ResponsiveContainer width="100%" height={220}>
         <BarChart data={data[selectedWeek]}>
@@ -43,7 +60,7 @@ const ActivityCharts = () => {
           />
         </BarChart>
       </ResponsiveContainer>
-    </div>
+    </motion.div>
   );
 };
 
