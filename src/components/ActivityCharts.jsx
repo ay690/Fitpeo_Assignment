@@ -50,8 +50,8 @@ const ActivityCharts = () => {
           <Tooltip />
           <Bar
             dataKey="uv"
-            fill="#8884d8"
-            barSize={20}
+            fill="#3457D5"
+            barSize={15}
             radius={[10, 10, 10, 10]}
           />
         </BarChart>

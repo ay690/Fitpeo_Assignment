@@ -5,7 +5,7 @@ const NetProfit = () => {
   const data = [{ value: 70 }, { value: 30 }];
 
   return (
-    <div className="w-full p-4 bg-gray-700 rounded-lg sm:max-w-sm lg:max-w-screen-xs">
+    <div className="w-full p-4 bg-gray-700 rounded-lg sm:max-w-sm lg:max-w-[350px]">
       <div className="flex items-start justify-between">
         <div className="flex flex-col items-start gap-2">
           <h3 className="text text-md">Net Profit</h3>
