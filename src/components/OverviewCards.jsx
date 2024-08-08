@@ -35,17 +35,17 @@ const cards = [
 
 const OverviewCards = () => {
   return (
-    <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:w-3/4">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:w-full">
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`p-4 rounded-lg ${card.bgColor} max-w-[250px]`}
+          className={`p-4 rounded-lg ${card.bgColor} w-full sm:max-w-[200px] lg:max-w-none`}
         >
-          <div className="flex flex-col  items-start ">
+          <div className="flex flex-col items-start">
             <div className="text-2xl">{card.icon}</div>
             <div>
               <div className="text-lg">{card.title}</div>
-              <div className="flex justify-between items-center gap-5 min-w-full">
+              <div className="flex items-center justify-between min-w-full gap-5">
                 <div className="text-2xl font-bold">{card.value}</div>
                 <div
                   className={`text-sm ${

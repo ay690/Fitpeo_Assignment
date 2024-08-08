@@ -10,8 +10,8 @@ import {
 
 const DashboardContent = () => {
   return (
-    <div className="p-4 flex flex-col space-y-4">
-      <div className="flex ">
+    <div className="flex flex-col p-4 space-y-4">
+      <div className="flex-col sm:gap-5 lg:flex lg:flex-row">
         <OverviewCards />
         <NetProfit />
       </div>

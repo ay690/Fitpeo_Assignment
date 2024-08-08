@@ -5,8 +5,8 @@ const NetProfit = () => {
   const data = [{ value: 70 }, { value: 30 }];
 
   return (
-    <div className="bg-gray-700 p-4 rounded-lg w-full lg:w-1/4">
-      <div className="flex justify-between items-start">
+    <div className="w-full p-4 bg-gray-700 rounded-lg sm:max-w-sm lg:max-w-screen-xs">
+      <div className="flex items-start justify-between">
         <div className="flex flex-col items-start gap-2">
           <h3 className="text text-md">Net Profit</h3>
           <h2 className="text-2xl font-bold">$ 6759.25</h2>
@@ -28,7 +28,7 @@ const NetProfit = () => {
               <Cell key="unfilled" fill="#72A0C1" />
             </Pie>
           </PieChart>
-          <div className="absolute -inset-3 flex flex-col items-center justify-center text-white font-bold ml-2">
+          <div className="absolute inset-0 flex flex-col items-center justify-center font-bold text-white">
             <span className="text-sm">70%</span>
             <span className="text-[5px]">Goals Completed</span>
           </div>
