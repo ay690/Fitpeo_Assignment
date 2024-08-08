@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="flex items-center justify-between p-4 bg-gray-800 sm:flex-row">
-      <div className="relative w-full mb-4 sm:w-auto sm:mb-0">
+      <div className="relative w-full mt-5 mb-4 sm:w-auto sm:mb-0 sm:mt-0">
         <input
           type="text"
           className="w-auto py-2 pl-10 pr-4 text-gray-300 bg-gray-700 rounded-lg sm:w-auto focus:outline-none"
@@ -42,7 +42,7 @@ const Header = () => {
           className="w-10 h-10 rounded-full hover:cursor-pointer"
         />
       </div>
-      <div className="flex items-center space-x-4 sm:hidden">
+      <div className="flex items-center justify-center space-x-4 sm:hidden">
         <FaBars
           className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer"
           size={30}
