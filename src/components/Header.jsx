@@ -37,16 +37,16 @@ const Header = () => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <FaEnvelope
-          className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer"
+          className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer hover:scale-[1.05]"
           size={30}
         />
         <CiSettings
-          className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer"
+          className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer hover:scale-[1.05]"
           size={30}
         />
         <div className="relative">
           <IoIosNotifications
-            className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer"
+            className="p-2 text-xl rounded-full bg-slate-400 hover:cursor-pointer hover:scale-[1.05]"
             size={30}
           />
           <span className="absolute top-0 right-0 block h-2.5 w-2.5 bg-blue-500 rounded-full"></span>
@@ -54,7 +54,7 @@ const Header = () => {
         <img
           src="https://www.photoshopessentials.com/newsite/wp-content/uploads/2018/08/resize-images-print-photoshop-f.jpg"
           alt="User Profile"
-          className="w-10 h-10 rounded-full hover:cursor-pointer"
+          className="w-10 h-10 rounded-full hover:cursor-pointer hover:scale-[1.05]"
         />
       </motion.div>
       <div className="flex items-center justify-center space-x-4 sm:hidden">
