@@ -32,7 +32,7 @@ const StarRating = ({ rating }) => {
         index < rating ? (
           <FaStar key={index} className="text-yellow-400" />
         ) : (
-          <FaRegStar key={index} className="text-white-400" />
+          <FaRegStar key={index} className="text-gray-400" />
         )
       )}
     </div>
@@ -41,7 +41,7 @@ const StarRating = ({ rating }) => {
 
 const CustomerFeedback = () => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg max-h-[200px] w-full lg:w-1/4 overflow-y-scroll custom-scrollbar">
+    <div className="bg-gray-800 p-4 rounded-lg w-full lg:w-1/4 max-h-[200px] overflow-y-scroll custom-scrollbar">
       <h3 className="mb-4 text-xl text-white">Customer's Feedback</h3>
       {feedback.map((item, index) => (
         <div key={index} className="py-4 border-t border-gray-700">

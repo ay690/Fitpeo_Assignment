@@ -60,15 +60,15 @@ const getStatusClasses = (status) => {
 
 const RecentOrders = () => {
   return (
-    <div className="bg-gray-800 p-4 rounded-lg w-3/4 max-h-[200px] overflow-y-scroll custom-scrollbar">
-      <h3 className="mb-4 text-xl">Recent Orders</h3>
-      <table className="w-full text-left">
+    <div className="bg-gray-800 p-4 rounded-lg w-full lg:w-3/4 max-h-[200px] overflow-y-scroll custom-scrollbar">
+      <h3 className="mb-4 text-lg md:text-xl">Recent Orders</h3>
+      <table className="w-full text-sm text-left md:text-base">
         <thead>
           <tr>
-            <th>Customer</th>
-            <th>Order No.</th>
-            <th>Amount</th>
-            <th>Status</th>
+            <th className="px-2 py-1 md:px-4 md:py-2">Customer</th>
+            <th className="px-2 py-1 md:px-4 md:py-2">Order No.</th>
+            <th className="px-2 py-1 md:px-4 md:py-2">Amount</th>
+            <th className="px-2 py-1 md:px-4 md:py-2">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -78,18 +78,30 @@ const RecentOrders = () => {
                 <img
                   src={order.image}
                   alt={`${order.customer}'s profile`}
-                  className="w-10 h-10 rounded-full"
+                  className="w-8 h-8 rounded-full md:w-10 md:h-10"
                 />
-                {order.customer}
+                <span className="text-xs md:text-sm lg:text-base">
+                  {order.customer}
+                </span>
               </td>
-              <td>{order.orderNo}</td>
-              <td>{order.amount}</td>
+              <td className="px-2 py-1 md:px-4 md:py-2">
+                <span className="text-xs md:text-sm lg:text-base">
+                  {order.orderNo}
+                </span>
+              </td>
+              <td className="px-2 py-1 md:px-4 md:py-2">
+                <span className="text-xs md:text-sm lg:text-base">
+                  {order.amount}
+                </span>
+              </td>
               <td
-                className={`rounded-full flex items-center justify-center mb-5 ${getStatusClasses(
+                className={`px-2 py-1 mb-5 md:px-4 md:py-1 rounded-full flex items-center justify-center ${getStatusClasses(
                   order.status
                 )}`}
               >
-                {order.status}
+                <span className="text-xs md:text-sm lg:text-base">
+                  {order.status}
+                </span>
               </td>
             </tr>
           ))}

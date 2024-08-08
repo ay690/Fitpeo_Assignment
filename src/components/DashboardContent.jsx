@@ -11,7 +11,7 @@ import {
 const DashboardContent = () => {
   return (
     <div className="flex flex-col p-4 space-y-4">
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col items-stretch gap-4 items lg:flex-row">
         <OverviewCards />
         <NetProfit />
       </div>
@@ -19,7 +19,7 @@ const DashboardContent = () => {
         <ActivityCharts />
         <GoalsPopularMenu />
       </div>
-      <div className="flex flex-col gap-4 lg:flex-row">
+      <div className="flex flex-col items-stretch gap-4 items lg:flex-row">
         <RecentOrders />
         <CustomerFeedback />
       </div>
