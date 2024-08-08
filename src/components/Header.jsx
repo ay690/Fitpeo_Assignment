@@ -50,7 +50,7 @@ const Header = () => {
         />
       </div>
       {menuOpen && (
-        <div className="absolute bg-gray-800 rounded-lg shadow-lg top-16 right-4 sm:hidden">
+        <div className="absolute z-10 bg-gray-800 rounded-lg shadow-lg top-16 right-4 sm:hidden">
           <ul className="flex flex-col p-4 space-y-2">
             <li className="flex items-center space-x-2">
               <FaEnvelope
