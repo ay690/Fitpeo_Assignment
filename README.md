@@ -8,7 +8,7 @@ This dashboard offers a clear view of important business metrics like total orde
 
 # Tech-Stacks
 
-ReactJS, Tailwind CSS, React-Recharts, react-icons
+ReactJS, Tailwind CSS, React-Recharts, react-icons, Framer-motion
 
 # Instructions
 
