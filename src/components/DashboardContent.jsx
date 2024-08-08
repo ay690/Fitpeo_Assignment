@@ -11,15 +11,15 @@ import {
 const DashboardContent = () => {
   return (
     <div className="flex flex-col p-4 space-y-4">
-      <div className="flex-col sm:gap-5 lg:flex lg:flex-row">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <OverviewCards />
         <NetProfit />
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex flex-col items-stretch gap-4 lg:flex-row">
         <ActivityCharts />
         <GoalsPopularMenu />
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <RecentOrders />
         <CustomerFeedback />
       </div>
